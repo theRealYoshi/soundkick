@@ -1,0 +1,15 @@
+{
+  "title": "Soundkick",
+  "name": "soundkick",
+  "version": "0.0.1",
+  "description": "A way to find artists playing in your area on Soundcloud",
+  "main": "index.js",
+  "author": "Yoshihiro Luk",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

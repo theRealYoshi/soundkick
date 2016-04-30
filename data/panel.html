@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Soundkick</title>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+<script>
+SC.initialize({
+  client_id: '2ccb798487adb9cc25ecd47c82b481d5',
+  redirect_uri: 'http://www.tommmo.com'
+});
+
+// initiate auth popup
+SC.connect().then(function() {
+  return SC.get('/me');
+}).then(function(me) {
+  alert('Hello, ' + me.username);
+});
+</script>
+</head>
+<body>
+  <h1>Hi there</h1>
+</body>
+</html>
